@@ -44,9 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IVirus.cs" />
+    <Compile Include="Killar.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Gousian.cs" />
+    <Compile Include="Utils\Simulator.cs" />
     <Compile Include="Virus.cs" />
   </ItemGroup>
   <ItemGroup>

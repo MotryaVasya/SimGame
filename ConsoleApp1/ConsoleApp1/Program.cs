@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleApp1.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,8 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Simulator sim = new Simulator(1000000, 3650);
+            sim.RunSimmulation();
         }
     }
 }

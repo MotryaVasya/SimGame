@@ -31,7 +31,7 @@ namespace ConsoleApp1
         }
 
         abstract public bool Death(Person person);
-
+    
         abstract public void Infect(Person person);
     }
 }
