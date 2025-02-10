@@ -15,6 +15,11 @@ namespace ConsoleApp1
         {
             _letality = letality+(float)rand.Next(-10, 10) / 100;
         }
+
+        public override int AgeToInfect => 12;
+
+        public override int DayToRecover => 7;
+
         public override bool Death(Person person)
         {
             if(rand.NextDouble() <= Lethality)

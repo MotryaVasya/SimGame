@@ -21,6 +21,9 @@ namespace ConsoleApp1
         public float Infection => _infection;
 
         public float Lethality => _letality;
+        public abstract int AgeToInfect { get; }
+
+        public abstract int DayToRecover { get; }
         #endregion
         protected Virus(string code, bool reinfection, float infection, float letality)
         {
@@ -31,7 +34,7 @@ namespace ConsoleApp1
         }
 
         abstract public bool Death(Person person);
-    
+
         abstract public void Infect(Person person);
     }
 }

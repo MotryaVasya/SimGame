@@ -10,7 +10,7 @@ namespace ConsoleApp1.Utils
     static class Gousian
     {
         private static Random rand = new Random();
-        public static double Randormal(double mean, double stdDev)
+        public static double RandNormal(double mean, double stdDev)
         {
             double u1 = 1f - rand.NextDouble();
             double u2 = 1f - rand.NextDouble();
