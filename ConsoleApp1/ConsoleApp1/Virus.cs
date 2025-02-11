@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    abstract class Virus : IVirus
+    public abstract class Virus : IVirus
     {
         protected string _code;
         protected bool _reinfection;

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Person
+    public class Person
     {
         private const float _coefLostImmunity = 0.000017f;
         private string _gender;
