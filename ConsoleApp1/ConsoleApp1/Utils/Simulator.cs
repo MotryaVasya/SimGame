@@ -25,7 +25,7 @@ namespace ConsoleApp1.Utils
 
         public int Days => _day;
         public int MaxDays => _maxDays;
-        public int Illed => _illed;
+        public int Illed => _illed; // больные
         public int Recovered => _recovered;
 
         public List<Person> Alive => _alive;
@@ -42,23 +42,31 @@ namespace ConsoleApp1.Utils
         public void RunSimmulation()
         {
             StartInfection();
-            for (int i = 0; i < _maxDays; i++)
+            for (int i = 1; i <= _maxDays; i++)
             {
                 _day = i;
-                if (i % 365 == 0)
-                {
-
-                }
                 _alive.RemoveAll((p) =>
                 {
-                    p.UpdateAge();
-                    if (p.Age >= p.MaxAge)
+                    if (!p.IsAlive)
                     {
                         _dead.Add(p);
                         return true;
                     }
                     return false;
                 });
+                if (i % 365 == 0)
+                {
+                    _alive.RemoveAll((p) =>
+                    {
+                        p.UpdateAge();
+                        if (p.Age >= p.MaxAge)
+                        {
+                            _dead.Add(p);
+                            return true;
+                        }
+                        return false;
+                    });
+                }
                 Infection();
                 Mortaliti();
                 Birth();
@@ -68,20 +76,18 @@ namespace ConsoleApp1.Utils
         {
             int range = (int)Math.Round(_alive.Count * _mortality / 365);
             List<Person> a = _alive.GetRange(0, range);
-            _alive.RemoveRange(0, (int)Math.Round(_alive.Count * _mortality));
-            for (int i = 0; i < a.Count; i++)
-            {
-                _dead.Add(a[i]);
-            }
+            _alive.RemoveRange(0, range);
+            _dead.AddRange(a);
+
         }
         private void Birth()
         {
-            int range = (int)Math.Round(_alive.Count * _mortality / 365);
+            int range = (int)Math.Round(_alive.Count * _birthrate / 365);
             for (int i = 0; i < range; i++)
             {
                 Person person = new Person(
                     _random.Next(0, 2) == 0 ? "Male" : "Famale", 0,
-                    _random.Next(65, 76) / 100);
+                    (float)_random.Next(70, 76) / 100);
                 _alive.Add(person);
             }
         }
@@ -89,7 +95,8 @@ namespace ConsoleApp1.Utils
         {
             for (int i = 0; i < Math.Round(_alive.Count * 0.02); i++)
             {
-                _alive.Find((p) => (p.Age >= _virus.AgeToInfect) && (!p.Status)).Status = true;
+                _alive.Find((p) => (p.Age >= _virus.AgeToInfect) && (!p.Status)).Infect();
+                _illed++;
             }
             _alive = _alive.OrderBy(_ => _random.Next()).ToList();
         }
@@ -98,18 +105,21 @@ namespace ConsoleApp1.Utils
             var allInfected = _alive.FindAll((p) => p.Status);
             foreach (var p in allInfected)
             {
-                if (p.UpdateInfection() == 0)
+                if (_virus.Death(p)) continue;
+
+                if (p.UpdateInfection() == _virus.DayToRecover)
                 {
                     if (!_virus.Reinfection)
                     {
                         p.CreateTotalImmunity();
-                        _recovered++;
                     }
+                    p.Recover();
+                    _recovered++;
                     continue;
                 }
                 if (_random.Next(101) >= 28)
                 {
-                    for (int i = 0; i < Math.Round(p.Friends * 0.5); i++)
+                    for (int i = 0; i < p.Friends / 2; i++)
                     {
                         Person meeting = _alive[_random.Next(0, _alive.Count)];
                         if (!meeting.Status && meeting.Age >= _virus.AgeToInfect && !meeting.TotalImmunity)
@@ -124,15 +134,13 @@ namespace ConsoleApp1.Utils
         private void Population(int countPopulation)
         {
             string[] gender = new string[2] { "Male", "Famale" };
-            int maxAge = 29201;
-            double maxImmunity = 0.75;
 
             for (int i = 0; i < countPopulation; i++)
             {
                 Person person = new Person(
                     gender[_random.Next(0, 2)],
                     _random.Next(0, 81),
-                    _random.Next(65, 76) / 100);
+                    (float)_random.Next(70, 76) / 100);
                 if (person.Age >= person.MaxAge)
                     _dead.Add(person);
                 else

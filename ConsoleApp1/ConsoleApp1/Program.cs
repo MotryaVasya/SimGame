@@ -20,7 +20,7 @@ namespace ConsoleApp1
                 Console.WriteLine("Введите сколько дней будет длится эпидемия");
                 YAndE.Item2 = int.Parse(Console.ReadLine());
 
-                Simulator sim = new Simulator(YAndE.Item1, YAndE.Item2, new Killar("asdf", false, 0.3f, 0.5f));
+                Simulator sim = new Simulator(YAndE.Item1, YAndE.Item2, new Killar("asdf", false, 0.5f, 0.3f));
                 Observer observer = new Observer(ref sim);
                 observer.Start();
                 Results(sim);
@@ -34,16 +34,17 @@ namespace ConsoleApp1
 
         private static void Results(Simulator simulator)
         {
+
             /*
-                 * Сколько человек было заражено;
-                 * Сколько человек погибло;
-                 * Сколько человек вылечилось;
-                 * Сколько человек в популяции;
-                 * Сколько дней длилась симуляция (необходимо, если симуляция была досрочно остановлена).
-             */
+                * Сколько человек было заражено;
+                * Сколько человек погибло;
+                * Сколько человек вылечилось;
+                * Сколько человек в популяции;
+                * Сколько дней длилась симуляция (необходимо, если симуляция была досрочно остановлена).
+            */
 
 
-            Console.WriteLine(simulator.Days==simulator.MaxDays?
+            Console.WriteLine(simulator.Days == simulator.MaxDays ?
                 $"Заражено: {simulator.Illed}\n" +
                 $"Умершие: {simulator.Dead.Count}\n" +
                 $"Вылечилось: {simulator.Recovered}\n" +

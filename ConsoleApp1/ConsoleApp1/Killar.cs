@@ -22,8 +22,11 @@ namespace ConsoleApp1
 
         public override bool Death(Person person)
         {
-            if(rand.NextDouble() <= Lethality)
+            if (rand.NextDouble() <= Lethality)
+            {
+                person.Detach();
                 return true;
+            }
             return false;
         }
 
@@ -31,7 +34,7 @@ namespace ConsoleApp1
         {
             if (person.Immunity <= Infection)
             {
-                person.Status = true;
+                person.Infect();
             }
         }
     }

@@ -3,40 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\vaso\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\simgame\\consoleapp1\\consoleapp1\\utils\\simulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\utils\\simulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\vaso\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\simgame\\consoleapp1\\consoleapp1\\virus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\virus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\vaso\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\simgame\\consoleapp1\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\consoleapp1\\utils\\simulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\utils\\simulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\vaso\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\simgame\\consoleapp1\\consoleapp1\\observer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\observer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\consoleapp1\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\consoleapp1\\virus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\virus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\consoleapp1\\textfile1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\textfile1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\consoleapp1\\killar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\killar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\consoleapp1\\ivirus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\vaso\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\simgame\\consoleapp1\\consoleapp1\\ivirus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\ivirus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\consoleapp1\\utils\\gousian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\utils\\gousian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\vaso\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\simgame\\consoleapp1\\consoleapp1\\killar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94BD157F-9BEC-45C0-955C-B5B067B833B3}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\killar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,128 +30,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Observer.cs",
-              "DocumentMoniker": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\Observer.cs",
-              "RelativeDocumentMoniker": "ConsoleApp1\\Observer.cs",
-              "ToolTip": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\Observer.cs",
-              "RelativeToolTip": "ConsoleApp1\\Observer.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAowCUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T04:02:37.099Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TextFile1.txt",
-              "DocumentMoniker": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\TextFile1.txt",
-              "RelativeDocumentMoniker": "ConsoleApp1\\TextFile1.txt",
-              "ToolTip": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\TextFile1.txt",
-              "RelativeToolTip": "ConsoleApp1\\TextFile1.txt",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-02-10T02:57:25.361Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Simulator.cs",
-              "DocumentMoniker": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\Utils\\Simulator.cs",
-              "RelativeDocumentMoniker": "ConsoleApp1\\Utils\\Simulator.cs",
-              "ToolTip": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\Utils\\Simulator.cs",
-              "RelativeToolTip": "ConsoleApp1\\Utils\\Simulator.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAADwvxwAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T03:44:50.415Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Gousian.cs",
-              "DocumentMoniker": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\Utils\\Gousian.cs",
-              "RelativeDocumentMoniker": "ConsoleApp1\\Utils\\Gousian.cs",
-              "ToolTip": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\Utils\\Gousian.cs",
-              "RelativeToolTip": "ConsoleApp1\\Utils\\Gousian.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T03:15:35.591Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Killar.cs",
-              "DocumentMoniker": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\Killar.cs",
-              "RelativeDocumentMoniker": "ConsoleApp1\\Killar.cs",
-              "ToolTip": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\Killar.cs",
-              "RelativeToolTip": "ConsoleApp1\\Killar.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBQAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T02:54:44.625Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Person.cs",
-              "DocumentMoniker": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\Person.cs",
-              "RelativeDocumentMoniker": "ConsoleApp1\\Person.cs",
-              "ToolTip": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\Person.cs",
-              "RelativeToolTip": "ConsoleApp1\\Person.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAcwAkAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T04:01:41.905Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Virus.cs",
-              "DocumentMoniker": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\Virus.cs",
-              "RelativeDocumentMoniker": "ConsoleApp1\\Virus.cs",
-              "ToolTip": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\Virus.cs",
-              "RelativeToolTip": "ConsoleApp1\\Virus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T03:05:11.564Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IVirus.cs",
-              "DocumentMoniker": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\IVirus.cs",
-              "RelativeDocumentMoniker": "ConsoleApp1\\IVirus.cs",
-              "ToolTip": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\IVirus.cs",
-              "RelativeToolTip": "ConsoleApp1\\IVirus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T02:53:48.552Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\Program.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
               "ToolTip": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\Program.cs",
               "RelativeToolTip": "ConsoleApp1\\Program.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAUwBwAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T08:53:18.128Z",
+              "WhenOpened": "2025-02-12T07:20:02.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Virus.cs",
+              "DocumentMoniker": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\Virus.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Virus.cs",
+              "ToolTip": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\Virus.cs",
+              "RelativeToolTip": "ConsoleApp1\\Virus.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T06:50:41.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IVirus.cs",
+              "DocumentMoniker": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\IVirus.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\IVirus.cs",
+              "ToolTip": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\IVirus.cs",
+              "RelativeToolTip": "ConsoleApp1\\IVirus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T06:50:35.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Killar.cs",
+              "DocumentMoniker": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\Killar.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Killar.cs",
+              "ToolTip": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\Killar.cs",
+              "RelativeToolTip": "ConsoleApp1\\Killar.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA5wBYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T06:49:56.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Simulator.cs",
+              "DocumentMoniker": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\Utils\\Simulator.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Utils\\Simulator.cs",
+              "ToolTip": "C:\\Users\\vaso\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\SimGame\\ConsoleApp1\\ConsoleApp1\\Utils\\Simulator.cs",
+              "RelativeToolTip": "ConsoleApp1\\Utils\\Simulator.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwIUAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T03:44:50.415Z",
               "EditorCaption": ""
             }
           ]

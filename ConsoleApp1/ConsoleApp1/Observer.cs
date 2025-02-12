@@ -1,4 +1,4 @@
-﻿using ConsoleApp1.Utils;
+﻿    using ConsoleApp1.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,7 +33,6 @@ namespace ConsoleApp1
 
         private void EarlyExit(Thread simThread)
         {
-
             while (simThread.IsAlive)
             {
                 if (Console.ReadKey().Key == ConsoleKey.Escape && simThread.IsAlive)
