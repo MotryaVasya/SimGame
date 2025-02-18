@@ -20,7 +20,7 @@ namespace ConsoleApp1
                 Console.WriteLine("Введите сколько дней будет длится эпидемия");
                 YAndE.Item2 = int.Parse(Console.ReadLine());
 
-                Simulator sim = new Simulator(YAndE.Item1, YAndE.Item2, new Killar("asdf", false, 0.5f, 0.3f));
+                Simulator sim = new Simulator(YAndE.Item1, YAndE.Item2, VirusCollection.ChickenpoxVirus);
                 Observer observer = new Observer(ref sim);
                 observer.Start();
                 Results(sim);
@@ -56,6 +56,39 @@ namespace ConsoleApp1
                 $"Живые: {simulator.Alive.Count}\n" +
                 $"Дней прошло: {simulator.Days}"
                 );
+        }
+    }
+
+    public static class VirusCollection
+    {
+        public static Virus ChickenpoxVirus => new Chickenpox("Chickenpox", false, 0.7f, 0.0001f);
+    }
+    class Chickenpox : Virus
+    {
+        private static Random _rand = new Random();
+
+        public Chickenpox(string Code, bool Reinfection, float InfectionCoef, float LethalityCoef) : base(Code, Reinfection, InfectionCoef, LethalityCoef)
+        {
+            _letality = LethalityCoef + (float)_rand.Next(-30, 30) / 100;
+        }
+        public override int AgeToInfect => 3;
+
+        public override int DayToRecover => 14;
+
+        public override bool Death(Person person)
+        {
+            if (_rand.NextDouble() <= Lethality)
+            {
+                person.Detach();
+                return true;
+            }
+            return false;
+        }
+
+        public override void Infect(Person person)
+        {
+            if (person.Immunity <= Infection)
+                person.Infect();
         }
     }
 }

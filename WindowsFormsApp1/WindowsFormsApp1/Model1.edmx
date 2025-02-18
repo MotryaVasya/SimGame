@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище ServiceModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Clients">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Telephone" Type="nvarchar" MaxLength="11" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="70" />
+        </EntityType>
+        <EntityType Name="Devices">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="Brand" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Model" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ClientId" Type="int" />
+        </EntityType>
+        <EntityType Name="Masters">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Spectialization" Type="nvarchar" MaxLength="255" />
+          <Property Name="Experiance" Type="int" />
+        </EntityType>
+        <EntityType Name="RepairRequests">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ClientId" Type="int" />
+          <Property Name="DeviceId" Type="int" />
+          <Property Name="ProblemDesc" Type="nvarchar" MaxLength="255" />
+          <Property Name="RequestDate" Type="datetime" />
+          <Property Name="MasterId" Type="int" />
+          <Property Name="Status" Type="nvarchar" MaxLength="255" />
+          <Property Name="Price" Type="decimal" Precision="10" Scale="2" />
+        </EntityType>
+        <Association Name="FK__Devices__ClientI__286302EC">
+          <End Role="Clients" Type="Self.Clients" Multiplicity="0..1" />
+          <End Role="Devices" Type="Self.Devices" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clients">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Devices">
+              <PropertyRef Name="ClientId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RepairReq__Clien__300424B4">
+          <End Role="Clients" Type="Self.Clients" Multiplicity="0..1" />
+          <End Role="RepairRequests" Type="Self.RepairRequests" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clients">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="RepairRequests">
+              <PropertyRef Name="ClientId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RepairReq__Devic__30F848ED">
+          <End Role="Devices" Type="Self.Devices" Multiplicity="0..1" />
+          <End Role="RepairRequests" Type="Self.RepairRequests" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Devices">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="RepairRequests">
+              <PropertyRef Name="DeviceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RepairReq__Maste__32E0915F">
+          <End Role="Masters" Type="Self.Masters" Multiplicity="0..1" />
+          <End Role="RepairRequests" Type="Self.RepairRequests" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Masters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="RepairRequests">
+              <PropertyRef Name="MasterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Хранилище ServiceModelContainer">
+          <EntitySet Name="Clients" EntityType="Self.Clients" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Devices" EntityType="Self.Devices" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Masters" EntityType="Self.Masters" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RepairRequests" EntityType="Self.RepairRequests" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Devices__ClientI__286302EC" Association="Self.FK__Devices__ClientI__286302EC">
+            <End Role="Clients" EntitySet="Clients" />
+            <End Role="Devices" EntitySet="Devices" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RepairReq__Clien__300424B4" Association="Self.FK__RepairReq__Clien__300424B4">
+            <End Role="Clients" EntitySet="Clients" />
+            <End Role="RepairRequests" EntitySet="RepairRequests" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RepairReq__Devic__30F848ED" Association="Self.FK__RepairReq__Devic__30F848ED">
+            <End Role="Devices" EntitySet="Devices" />
+            <End Role="RepairRequests" EntitySet="RepairRequests" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RepairReq__Maste__32E0915F" Association="Self.FK__RepairReq__Maste__32E0915F">
+            <End Role="Masters" EntitySet="Masters" />
+            <End Role="RepairRequests" EntitySet="RepairRequests" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ServiceModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Clients">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Telephone" Type="String" MaxLength="11" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Devices" Relationship="Self.FK__Devices__ClientI__286302EC" FromRole="Clients" ToRole="Devices" />
+          <NavigationProperty Name="RepairRequests" Relationship="Self.FK__RepairReq__Clien__300424B4" FromRole="Clients" ToRole="RepairRequests" />
+        </EntityType>
+        <EntityType Name="Devices">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Brand" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ClientId" Type="Int32" />
+          <NavigationProperty Name="Clients" Relationship="Self.FK__Devices__ClientI__286302EC" FromRole="Devices" ToRole="Clients" />
+          <NavigationProperty Name="RepairRequests" Relationship="Self.FK__RepairReq__Devic__30F848ED" FromRole="Devices" ToRole="RepairRequests" />
+        </EntityType>
+        <EntityType Name="Masters">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Spectialization" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Experiance" Type="Int32" />
+          <NavigationProperty Name="RepairRequests" Relationship="Self.FK__RepairReq__Maste__32E0915F" FromRole="Masters" ToRole="RepairRequests" />
+        </EntityType>
+        <EntityType Name="RepairRequests">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ClientId" Type="Int32" />
+          <Property Name="DeviceId" Type="Int32" />
+          <Property Name="ProblemDesc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="RequestDate" Type="DateTime" Precision="3" />
+          <Property Name="MasterId" Type="Int32" />
+          <Property Name="Status" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Price" Type="Decimal" Precision="10" Scale="2" />
+          <NavigationProperty Name="Clients" Relationship="Self.FK__RepairReq__Clien__300424B4" FromRole="RepairRequests" ToRole="Clients" />
+          <NavigationProperty Name="Devices" Relationship="Self.FK__RepairReq__Devic__30F848ED" FromRole="RepairRequests" ToRole="Devices" />
+          <NavigationProperty Name="Masters" Relationship="Self.FK__RepairReq__Maste__32E0915F" FromRole="RepairRequests" ToRole="Masters" />
+        </EntityType>
+        <Association Name="FK__Devices__ClientI__286302EC">
+          <End Role="Clients" Type="Self.Clients" Multiplicity="0..1" />
+          <End Role="Devices" Type="Self.Devices" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clients">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Devices">
+              <PropertyRef Name="ClientId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RepairReq__Clien__300424B4">
+          <End Role="Clients" Type="Self.Clients" Multiplicity="0..1" />
+          <End Role="RepairRequests" Type="Self.RepairRequests" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clients">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="RepairRequests">
+              <PropertyRef Name="ClientId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RepairReq__Devic__30F848ED">
+          <End Role="Devices" Type="Self.Devices" Multiplicity="0..1" />
+          <End Role="RepairRequests" Type="Self.RepairRequests" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Devices">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="RepairRequests">
+              <PropertyRef Name="DeviceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RepairReq__Maste__32E0915F">
+          <End Role="Masters" Type="Self.Masters" Multiplicity="0..1" />
+          <End Role="RepairRequests" Type="Self.RepairRequests" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Masters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="RepairRequests">
+              <PropertyRef Name="MasterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ServiceEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Clients" EntityType="Self.Clients" />
+          <EntitySet Name="Devices" EntityType="Self.Devices" />
+          <EntitySet Name="Masters" EntityType="Self.Masters" />
+          <EntitySet Name="RepairRequests" EntityType="Self.RepairRequests" />
+          <AssociationSet Name="FK__Devices__ClientI__286302EC" Association="Self.FK__Devices__ClientI__286302EC">
+            <End Role="Clients" EntitySet="Clients" />
+            <End Role="Devices" EntitySet="Devices" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RepairReq__Clien__300424B4" Association="Self.FK__RepairReq__Clien__300424B4">
+            <End Role="Clients" EntitySet="Clients" />
+            <End Role="RepairRequests" EntitySet="RepairRequests" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RepairReq__Devic__30F848ED" Association="Self.FK__RepairReq__Devic__30F848ED">
+            <End Role="Devices" EntitySet="Devices" />
+            <End Role="RepairRequests" EntitySet="RepairRequests" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RepairReq__Maste__32E0915F" Association="Self.FK__RepairReq__Maste__32E0915F">
+            <End Role="Masters" EntitySet="Masters" />
+            <End Role="RepairRequests" EntitySet="RepairRequests" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище ServiceModelContainer" CdmEntityContainer="ServiceEntities">
+          <EntitySetMapping Name="Clients">
+            <EntityTypeMapping TypeName="ServiceModel.Clients">
+              <MappingFragment StoreEntitySet="Clients">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Devices">
+            <EntityTypeMapping TypeName="ServiceModel.Devices">
+              <MappingFragment StoreEntitySet="Devices">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Brand" ColumnName="Brand" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Masters">
+            <EntityTypeMapping TypeName="ServiceModel.Masters">
+              <MappingFragment StoreEntitySet="Masters">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Spectialization" ColumnName="Spectialization" />
+                <ScalarProperty Name="Experiance" ColumnName="Experiance" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RepairRequests">
+            <EntityTypeMapping TypeName="ServiceModel.RepairRequests">
+              <MappingFragment StoreEntitySet="RepairRequests">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+                <ScalarProperty Name="DeviceId" ColumnName="DeviceId" />
+                <ScalarProperty Name="ProblemDesc" ColumnName="ProblemDesc" />
+                <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+                <ScalarProperty Name="MasterId" ColumnName="MasterId" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
